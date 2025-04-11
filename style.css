@@ -6,7 +6,7 @@ body{
   .container-fluid{
     background-image: url('./img/6.jpg');
     background-size: cover;  /* Ensures the image covers the full container */
-    background-position: center top;  /* Centers the background image */
+    background-position: center center;  /* Centers the background image */
     background-repeat: no-repeat;  /* Prevents the image from repeating */
     min-height: 100vh;
     height:auto;
