@@ -1,36 +1,42 @@
-/* body {
-    background: linear-gradient(135deg, #ff6a00, #ee0979);
-    background-image: url('./img/3.jpg');
-    background-size: cover;
-    min-height: 100vh;
+body{
+    padding: 0;
     margin: 0;
-    color: white;
-    font-family: 'Segoe UI', sans-serif;
-  } */
-  .container{
-    width: 50%;
-    background-image: url('./img/5.jpg');
+}
+
+  .container-fluid{
+    background-image: url('./img/6.jpg');
     background-size: cover;  /* Ensures the image covers the full container */
-    background-position: center;  /* Centers the background image */
+    background-position: center top;  /* Centers the background image */
     background-repeat: no-repeat;  /* Prevents the image from repeating */
-    height:auto;  /* You can set a specific height or use dynamic height as per content */
-  
+    min-height: 100vh;
+    height:auto;
 }
 #cityName{
     height: 50px;
     background: transparent;
 }
 
-#button{
-    margin-top: 20px;
-}
 #btn{
     width: 200px;
     height: 50px;
 }
 #temp{
     margin-top: 20px;
-    height: 40px;
     font-size: 20px;
-    
+    font-weight: bolder;
+}
+#sunRise{
+    font-weight: bold;
+}
+#sunSet{
+    font-weight: bold;
+}
+#humidity{
+    font-weight: bolder;
+}
+#countryName{
+    font-weight: bold;
+}
+#clock{
+    font-weight: bold;
 }
