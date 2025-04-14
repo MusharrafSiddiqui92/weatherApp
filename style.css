@@ -2,13 +2,32 @@ body{
     padding: 0;
     margin: 0;
 }
-
+.rain{
+    background-image: url("./img/rain-4431_256.gif");
+    background-position: center;
+    background-size: cover;
+}
+.clear{
+    background-image: url("./img/clearDay.gif");
+    background-position: center;
+    background-size: cover;
+}
+.clouds{
+    background-image: url("./img/cloud.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.default{
+    background-image: url("./img/5.jpg");
+    background-position: center;
+    background-size: cover;
+}
   .container-fluid{
-    background-image: url('./img/6.jpg');
+    /* background-image: url('./img/6.jpg'); */
     background-size: cover;  /* Ensures the image covers the full container */
     background-position: center center;  /* Centers the background image */
     background-repeat: no-repeat;  /* Prevents the image from repeating */
-    min-height: 100vh;
+    min-height: 97vh;
     height:auto;
 }
 #cityName{
@@ -38,5 +57,8 @@ body{
     font-weight: bold;
 }
 #clock{
+    font-weight: bold;
+}
+#Localclock{
     font-weight: bold;
 }
