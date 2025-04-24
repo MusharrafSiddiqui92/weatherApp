@@ -22,7 +22,7 @@ function weatherApp() {
       document.querySelector("#LocalClock").innerHTML = `Local Time:${response.data.timezone}`;
       // Weather Condition and Wallpaper Handling
       let WeatherCondition = response.data.weather[0].main.toLowerCase(); // convert to lowercase for easier comparison
-      document.querySelector("#condition").innerHTML = WeatherCondition;
+      document.querySelector("#condition").innerHTML =`Weather Condition: ${WeatherCondition}`;
       document.body.classList.remove("rain", "clouds", "clear", "default")
       if (WeatherCondition === "rain"){
         document.body.classList.add("rain")
@@ -34,6 +34,9 @@ function weatherApp() {
   else if (WeatherCondition === "clear"){
     document.body.classList.add("clear")
   }
+  // else if (WeatherCondition === "haze"){
+  //   document.body.classList.add("haze")
+  // }
        else{
         document.body.classList.add("default")
        }
@@ -47,13 +50,6 @@ function weatherApp() {
       document.querySelector("#condition").innerHTML = "Something Went Wrong";
     });
 }
-function getLocalTime(timezoneOffsetInSeconds) {
-  let utcTime = moment.utc(); // get current UTC time
-  let localTime = utcTime.add(timezoneOffsetInSeconds, 'seconds'); // add offset
-  return localTime.format('LTS'); // format to local time string
-  console.log(getLocalTime)
-}
-
 function time() {
   let currTime = moment().format('LTS');
 document.getElementById("clock").textContent=currTime;

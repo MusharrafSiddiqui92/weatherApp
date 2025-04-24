@@ -1,4 +1,7 @@
 body{
+        background-image: url("./img/6.jpg");
+    background-position: center;
+    background-size: cover;
     padding: 0;
     margin: 0;
 }
@@ -17,19 +20,22 @@ body{
     background-position: center;
     background-size: cover;
 }
+/* .haze{
+    background-image: url("./img/haze.jpg");
+    background-position: center;
+    background-size: cover;
+} */
 .default{
-    background-image: url("./img/5.jpg");
+    background-image: url("./img/haze.jpg");
     background-position: center;
     background-size: cover;
 }
-  .container-fluid{
-    /* background-image: url('./img/6.jpg'); */
-    background-size: cover;  /* Ensures the image covers the full container */
-    background-position: center center;  /* Centers the background image */
-    background-repeat: no-repeat;  /* Prevents the image from repeating */
-    min-height: 97vh;
-    height:auto;
-}
+/* #dwallpaper{
+    background-image: url('./img/6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
 #cityName{
     height: 50px;
     background: transparent;
@@ -60,5 +66,8 @@ body{
     font-weight: bold;
 }
 #Localclock{
+    font-weight: bold;
+}
+#condition{
     font-weight: bold;
 }
